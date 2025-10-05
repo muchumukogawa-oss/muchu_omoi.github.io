@@ -195,6 +195,53 @@ rt {
   BoothSelect.html
   ========================== */
 
+.decide-btn {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* 斜線の影 */
+.decide-btn {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* 斜線の影を右斜め下にずらす */
+.decide-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    45deg,
+    /* 斜め方向 */ rgba(255, 255, 255, 0.1) 0px,
+    rgba(255, 255, 255, 0.1) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  pointer-events: none;
+  transform: translate(30%, 30%); /* 右下方向にずらす */
+}
+
+.decide-btn:hover {
+  transform: scale(1.05);
+}
 /* ==========================
   ColorSelect.html
   ========================== */
