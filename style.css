@@ -21,7 +21,9 @@ body {
   justify-content: center;
   text-align: center;
 }
-
+/* ==========================
+  index.html
+   ========================== */
 /* ロゴ */
 .logo img {
   width: 45vw; /* 画面幅の45% */
@@ -136,4 +138,52 @@ ruby {
 
 rt {
   font-size: 0.6em; /* 小さめに */
+}
+
+/* ==========================
+  play.html
+   ========================== */
+.page-container {
+  font-family: 'Kosugi Maru', sans-serif;
+  text-align: center;
+}
+
+/* 遊び方タイトル画像を基準に配置 */
+.howto-play {
+  position: relative;
+  width: 60vw;
+  max-width: 600px;
+  margin: 8vh auto 0 auto;
+}
+
+/* 遊び方画像 */
+.howto-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 快適くん（右下に配置・遊び方画像の半分の大きさ） */
+.comfortable-in-howto {
+  position: absolute;
+  bottom: -55%; /* 少し下に出す感じ */
+  right: -8%;
+  width: 50%;
+  height: auto;
+}
+
+/* 次へボタン（快適くんより下） */
+.next {
+  margin-top: 15vh;
+}
+
+.next-img {
+  cursor: pointer;
+  width: 25vw;
+  max-width: 200px;
+  transition: transform 0.2s ease;
+}
+
+.next-img:hover {
+  transform: scale(1.05);
 }

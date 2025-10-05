@@ -14,7 +14,12 @@ startImg.addEventListener('click', (e) => {
 // ×ボタンで閉じる
 closeBtn.addEventListener('click', () => (popup.style.display = 'none'));
 
-// 「同意する」画像クリックで play.html へ遷移
+// 「同意する」クリックで play.html へ遷移
 agreeBtn.addEventListener('click', () => {
   window.location.href = 'play.html';
+});
+
+// 「次へ」クリックで BoothSelect.html へ遷移
+nextBtn.addEventListener('click', () => {
+  window.location.href = 'BoothSelecthtml';
 });
