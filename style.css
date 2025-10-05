@@ -22,6 +22,11 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /* ==========================
   index.html
   ========================== */
@@ -196,15 +201,16 @@ rt {
   ========================== */
 
 .decide-btn {
-  position: relative;
-  padding: 12px 24px;
-  font-size: 16px;
-  color: white;
-  background-color: black;
-  border: none;
-  border-radius: 32px;
-  cursor: pointer;
-  overflow: hidden;
+  display: flex;
+  width: 167px;
+  height: 69px;
+  padding: 6px 14px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #232323;
 }
 
 /* 斜線の影 */
