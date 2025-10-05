@@ -8,6 +8,14 @@ body {
   font-family: 'Kosugi Maru', 'Noto Sans JP', sans-serif;
 }
 
+ruby {
+  ruby-position: over; /* 上に表示（デフォルト） */
+}
+
+rt {
+  font-size: 0.6em; /* 小さめに */
+}
+
 /* ページ全体 */
 .page-container {
   width: 100%;
@@ -27,6 +35,32 @@ a {
   color: #fff;
 }
 
+/* 共通ボタンスタイル */
+.custom-btn {
+  border-style: outset;
+  background: #232323;
+  color: #fff;
+  border-width: 0 8px 8px 0;
+  display: flex;
+  padding: 6px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 100px;
+}
+
+/* ホバー時のアニメーション */
+.custom-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* 押したとき */
+.custom-btn:active {
+  transform: scale(0.95);
+}
+
 /* ==========================
   index.html
   ========================== */
@@ -40,17 +74,9 @@ a {
 }
 
 /* はじめる */
-.start-img {
-  cursor: pointer;
-  width: 25vw; /* 画面幅の25% */
-  max-width: 300px; /* 最大幅 */
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.2s ease;
-}
-
-.start-img:hover {
-  transform: scale(1.05);
+.start-btn {
+  width: 167px;
+  height: 69px;
 }
 
 /* 感情キャラたちの位置指定 */
@@ -129,22 +155,9 @@ a {
 }
 
 /* 同意する*/
-.agree-img {
-  cursor: pointer;
-  width: 20vw; /* 画面幅の20% */
-  transition: transform 0.2s ease;
-}
-
-.agree-img:hover {
-  transform: scale(1.05);
-}
-
-ruby {
-  ruby-position: over; /* 上に表示（デフォルト） */
-}
-
-rt {
-  font-size: 0.6em; /* 小さめに */
+.agree-btn {
+  width: 110px;
+  height: 45px;
 }
 
 /* ==========================
@@ -185,15 +198,9 @@ rt {
   margin-top: 15vh;
 }
 
-.next-img {
-  cursor: pointer;
-  width: 25vw;
-  max-width: 200px;
-  transition: transform 0.2s ease;
-}
-
-.next-img:hover {
-  transform: scale(1.05);
+.next-btn {
+  width: 167px;
+  height: 69px;
 }
 
 /* ==========================
@@ -201,53 +208,10 @@ rt {
   ========================== */
 
 .decide-btn {
-  display: flex;
   width: 167px;
   height: 69px;
-  padding: 6px 14px;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 100px;
-  background: #232323;
 }
 
-/* 斜線の影 */
-.decide-btn {
-  position: relative;
-  padding: 12px 24px;
-  font-size: 16px;
-  color: white;
-  background-color: black;
-  border: none;
-  border-radius: 35px;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-/* 斜線の影を右斜め下にずらす */
-.decide-btn::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: repeating-linear-gradient(
-    45deg,
-    /* 斜め方向 */ rgba(255, 255, 255, 0.1) 0px,
-    rgba(255, 255, 255, 0.1) 4px,
-    transparent 4px,
-    transparent 8px
-  );
-  pointer-events: none;
-  transform: translate(30%, 30%); /* 右下方向にずらす */
-}
-
-.decide-btn:hover {
-  transform: scale(1.05);
-}
 /* ==========================
   ColorSelect.html
   ========================== */
