@@ -30,7 +30,7 @@ body {
   margin-bottom: 30px; /* ロゴと「はじめる」の間隔 */
 }
 
-/* はじめる画像 */
+/* はじめる */
 .start-img {
   cursor: pointer;
   width: 25vw; /* 画面幅の25% */
@@ -119,10 +119,10 @@ body {
   margin-top: 20px;
 }
 
-/* 「同意する」画像ボタン */
+/* 同意する*/
 .agree-img {
   cursor: pointer;
-  width: 180px;
+  width: 20vw; /* 画面幅の20% */
   transition: transform 0.2s ease;
 }
 
