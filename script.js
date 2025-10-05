@@ -4,6 +4,7 @@ const startImg = document.querySelector('.start-img');
 const popup = document.getElementById('popup');
 const closeBtn = document.querySelector('.close');
 const agreeBtn = document.getElementById('agreeBtn');
+const nextBtn = document.getElementById('nextBtn');
 
 // 「はじめる」クリックでポップアップ表示
 startImg.addEventListener('click', (e) => {
@@ -21,5 +22,5 @@ agreeBtn.addEventListener('click', () => {
 
 // 「次へ」クリックで BoothSelect.html へ遷移
 nextBtn.addEventListener('click', () => {
-  window.location.href = 'BoothSelecthtml';
+  window.location.href = 'BoothSelect.html';
 });

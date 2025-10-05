@@ -21,9 +21,11 @@ body {
   justify-content: center;
   text-align: center;
 }
+
 /* ==========================
   index.html
    ========================== */
+
 /* ロゴ */
 .logo img {
   width: 45vw; /* 画面幅の45% */
@@ -46,7 +48,7 @@ body {
   transform: scale(1.05);
 }
 
-/* 👇 感情キャラたちの位置指定（レスポンシブ対応） */
+/* 感情キャラたちの位置指定 */
 .emotion {
   position: absolute;
   width: 12vw; /* 画面幅に応じて変化 */
@@ -143,12 +145,13 @@ rt {
 /* ==========================
   play.html
    ========================== */
+
 .page-container {
   font-family: 'Kosugi Maru', sans-serif;
   text-align: center;
 }
 
-/* 遊び方タイトル画像を基準に配置 */
+/* 遊び方画像を基準に配置 */
 .howto-play {
   position: relative;
   width: 60vw;
@@ -156,7 +159,7 @@ rt {
   margin: 8vh auto 0 auto;
 }
 
-/* 遊び方画像 */
+/* 遊び方 */
 .howto-img {
   width: 100%;
   height: auto;
@@ -172,7 +175,7 @@ rt {
   height: auto;
 }
 
-/* 次へボタン（快適くんより下） */
+/* 次へボタン */
 .next {
   margin-top: 15vh;
 }
