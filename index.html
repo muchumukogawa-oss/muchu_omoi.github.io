@@ -4,155 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>おもいのパレット-タイトル</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
-  <style>
-    html,
-    body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: #eee; /* 背景を付けると確認しやすい */
-    }
-  </style>
   <body>
     <!-- 全体 -->
     <div style="width: 100%; height: 100%; position: relative; background: white; overflow: hidden">
-      <!-- ボタン影 -->
-      <div
-        data-show-icon="off"
-        data-status="default"
-        style="
-          width: 167px;
-          height: 79px;
-          padding-left: 14px;
-          padding-right: 14px;
-          padding-top: 6px;
-          padding-bottom: 6px;
-          left: 119px;
-          top: 567px;
-          position: absolute;
-          overflow: hidden;
-          border-radius: 100px;
-          background-image: url(https://placehold.co/167x79);
-          justify-content: center;
-          align-items: center;
-          gap: 10px;
-          display: inline-flex;
-        "
-      >
-        <!-- はじめる文字これ影かな？？ -->
-        <div
-          style="
-            color: white;
-            font-size: 26px;
-            font-family: Kosugi Maru;
-            font-weight: 400;
-            line-height: 41.6px;
-            word-wrap: break-word;
-          "
-        >
-          <a href="play.html"> はじめる </a>
-        </div>
+      <a href="play.html"> 
+        <img src="img/hajimeru.png" alt="はじめる" />
+      </a>
+
         <!-- onclick="location.href='play.html'" -->
-      </div>
-      <!-- ボタン本体 -->
-      <div
-        data-show-icon="off"
-        data-status="default"
-        style="
-          width: 167px;
-          height: 69px;
-          padding-left: 14px;
-          padding-right: 14px;
-          padding-top: 6px;
-          padding-bottom: 6px;
-          left: 112px;
-          top: 566px;
-          position: absolute;
-          background: #232323;
-          overflow: hidden;
-          border-radius: 100px;
-          justify-content: center;
-          align-items: center;
-          gap: 10px;
-          display: inline-flex;
-        "
-      >
-        <!-- はじめる文字 -->
-        <div
-          style="
-            color: white;
-            font-size: 26px;
-            font-family: Kosugi Maru;
-            font-weight: 400;
-            line-height: 41.6px;
-            word-wrap: break-word;
-          "
-        >
-          はじめる
-        </div>
       </div>
       <!-- ロゴ画像 -->
       <div>
-        <img style="width: 249px; height: 229px; left: 70px; top: 268px; position: absolute" src="img/logo.png" />
+        <img src="img/logo.png" alt="ロゴ" />
       </div>
-      <!-- 悲しみのキャラクターパーツごと？ -->
-      <div>
-        <img
-          style="
-            width: 252.38px;
-            height: 230.11px;
-            left: 177px;
-            top: 706.34px;
-            position: absolute;
-            transform: rotate(-26deg);
-            transform-origin: top left;
-          "
-          src="img/sad.png"
-        />
-      </div>
-      <!-- ここまで悲しみのパーツ -->
+      <!-- 悲しみ画像-->
+      <img src="img/sad.png" alt="悲しみくん" />
       <!-- 快適画像 -->
-      <img
-        style="
-          width: 225.71px;
-          height: 189.08px;
-          left: -32.17px;
-          top: 648px;
-          position: absolute;
-          transform: rotate(13deg);
-          transform-origin: top left;
-        "
-        src="img/comfortable.png"
+      <img src="img/comfortable.png" alt="快適くん" />  
       />
       <!-- 怒りくん画像 -->
-      <img
-        style="
-          width: 235.51px;
-          height: 235.25px;
-          left: 50.66px;
-          top: -28px;
-          position: absolute;
-          transform: rotate(38deg);
-          transform-origin: top left;
-        "
-        src="img/anger.png"
+      <img src="img/anger.png" alt="怒りくん" />
       />
       <!-- 信頼くん画像 -->
-      <img
-        style="
-          width: 259px;
-          height: 268px;
-          left: 157px;
-          top: 86.41px;
-          position: absolute;
-          transform: rotate(-30deg);
-          transform-origin: top left;
-        "
-        src="img/trust.png"
-      />
+      <img src="img/trust.png" alt="信頼くん" />
     </div>
+    <!-- ポップアップ -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>ご利用にあたってのお願い</h2>
+        <p>このアプリは、感情を色で表現し、心の状態を視覚化することを目的としています。</p>
+        <p>「はじめる」ボタンをクリックして、あなたの感情の旅を始めましょう！</p>
+      </div>
   </body>
 </html>
