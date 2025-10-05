@@ -36,36 +36,47 @@ a {
 }
 
 /* 共通ボタンスタイル */
+.btn-text {
+  position: relative;
+  z-index: 3; /* 擬似要素より前面 */
+}
+
 .custom-btn {
-  position: relative; /* 擬似要素の基準 */
+  position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 12.5px 36.5px;
-
+  border: none;
+  border-radius: 100px;
   font-family: 'Kosugi Maru';
   font-size: 26px;
   line-height: 160%;
   color: #fff; /* 文字色 */
   cursor: pointer;
-
-  border: none;
-  border-radius: 100px;
-  background: #232323; /* 黒背景 */
-  z-index: 1; /* 文字と黒背景は上に */
-  overflow: visible; /* 擬似要素をはみ出させる */
-  transition: transform 0.2s, filter 0.2s;
+  overflow: visible;
+  z-index: 2;
 }
 
-/* 右下にずらした白黒ストライプ */
+/* 背景用擬似要素（文字より下に配置） */
+.custom-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 100px;
+  background: #232323; /* 黒背景 */
+  z-index: 1; /* 文字より下 */
+}
+
+/* 斜線影用擬似要素（最背面に配置） */
 .custom-btn::after {
   content: '';
   position: absolute;
-  inset: 0; /* ボタン全体と同じサイズ */
+  inset: 0;
   border-radius: 100px;
-  background: repeating-linear-gradient(45deg, #fff 0 6px, #000 6px 12px); /* 同幅ストライプ */
-  transform: translate(8px, 8px); /* 右下にずらす */
-  z-index: -1; /* 黒背景より背面に配置 */
+  background: repeating-linear-gradient(45deg, #fff 0 4px, #000 4px 10px);
+  transform: translate(6px, 6px);
+  z-index: 0; /* 背景のさらに下 */
 }
 
 /* ホバー時のアニメーション */
