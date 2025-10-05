@@ -129,3 +129,12 @@ body {
 .agree-img:hover {
   transform: scale(1.05);
 }
+
+ruby {
+  ruby-position: over; /* 上に表示（デフォルト） */
+}
+
+rt {
+  font-size: 0.6em; /* 小さめに */
+  color: #555; /* 少し薄い文字色 */
+}
