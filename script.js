@@ -1,26 +1,31 @@
 'use strict';
 
+// index.html 用
 const startImg = document.querySelector('.start-img');
 const popup = document.getElementById('popup');
 const closeBtn = document.querySelector('.close');
 const agreeBtn = document.getElementById('agreeBtn');
+
+// play.html 用
 const nextBtn = document.getElementById('nextBtn');
 
-// 「はじめる」クリックでポップアップ表示
-startImg.addEventListener('click', (e) => {
-  e.preventDefault();
-  popup.style.display = 'flex';
-});
+// index.html 用イベント
+if (startImg && popup && closeBtn && agreeBtn) {
+  startImg.addEventListener('click', (e) => {
+    e.preventDefault();
+    popup.style.display = 'flex';
+  });
 
-// ×ボタンで閉じる
-closeBtn.addEventListener('click', () => (popup.style.display = 'none'));
+  closeBtn.addEventListener('click', () => (popup.style.display = 'none'));
 
-// 「同意する」クリックで play.html へ遷移
-agreeBtn.addEventListener('click', () => {
-  window.location.href = 'play.html';
-});
+  agreeBtn.addEventListener('click', () => {
+    window.location.href = 'play.html';
+  });
+}
 
-// 「次へ」クリックで BoothSelect.html へ遷移
-nextBtn.addEventListener('click', () => {
-  window.location.href = 'BoothSelect.html';
-});
+// play.html 用イベント
+if (nextBtn) {
+  nextBtn.addEventListener('click', () => {
+    window.location.href = 'BoothSelect.html';
+  });
+}
