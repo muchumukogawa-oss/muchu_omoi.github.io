@@ -1,1 +1,20 @@
+'use strict';
 
+const startImg = document.querySelector('.start-img');
+const popup = document.getElementById('popup');
+const closeBtn = document.querySelector('.close');
+const agreeBtn = document.getElementById('agreeBtn');
+
+// 「はじめる」クリックでポップアップ表示
+startImg.addEventListener('click', (e) => {
+  e.preventDefault();
+  popup.style.display = 'flex';
+});
+
+// ×ボタンで閉じる
+closeBtn.addEventListener('click', () => (popup.style.display = 'none'));
+
+// 「同意する」画像クリックで play.html へ遷移
+agreeBtn.addEventListener('click', () => {
+  window.location.href = 'play.html';
+});

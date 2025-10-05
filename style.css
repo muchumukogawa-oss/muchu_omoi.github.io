@@ -4,5 +4,121 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #eee; /* 背景を付けると確認しやすい */
+  background: #eee;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ページ全体 */
+.page-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* ロゴ */
+.logo img {
+  width: 200px;
+  margin-top: 20px;
+}
+
+/* はじめる画像 */
+.start-img {
+  cursor: pointer;
+  width: 180px;
+  display: block;
+  margin: 30px auto;
+  transition: transform 0.2s ease;
+}
+
+.start-img:hover {
+  transform: scale(1.05);
+}
+
+/* 👇 感情キャラたちの位置指定（レスポンシブ対応） */
+.emotion {
+  position: absolute;
+  width: 12vw; /* 画面幅に応じて変化 */
+  max-width: 140px;
+  min-width: 80px;
+}
+
+/* 怒りくん：左上 */
+.anger {
+  top: 2vw;
+  left: 2vw;
+}
+
+/* 信頼くん：右上 */
+.trust {
+  top: 2vw;
+  right: 2vw;
+}
+
+/* 快適くん：左下 */
+.comfortable {
+  bottom: 2vw;
+  left: 2vw;
+}
+
+/* 悲しみくん：右下 */
+.sad {
+  bottom: 2vw;
+  right: 2vw;
+}
+
+/* ポップアップ全体 */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ポップアップ内容 */
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  height: 80%;
+  overflow-y: auto;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 閉じるボタン */
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ボタン配置 */
+.popup-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 「同意する」画像ボタン */
+.agree-img {
+  cursor: pointer;
+  width: 180px;
+  transition: transform 0.2s ease;
+}
+
+.agree-img:hover {
+  transform: scale(1.05);
 }
