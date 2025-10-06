@@ -332,7 +332,7 @@ ol li {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  background: #fff;
+  background-color: #fff;
   font-size: 16px;
   font-weight: 400;
   line-height: 160%; /* 25.6px */
