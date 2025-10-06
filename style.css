@@ -293,7 +293,7 @@ ol li {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin: 20px 0;
+  margin: 0 0 24px 0;
 }
 
 /* ラジオボタンは非表示 */
@@ -338,7 +338,7 @@ ol li {
   padding: 16px;
   width: 100%;
   box-sizing: border-box; /* paddingを含めて幅を計算 */
-  margin: 0; /* 外側余白があるとpaddingをはみ出すのでリセット */
+  margin: 0 0 24px 0;
 }
 
 .background-box {
