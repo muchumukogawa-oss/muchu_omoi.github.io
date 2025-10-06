@@ -32,12 +32,16 @@ rt {
 
 a {
   text-decoration: none;
+}
+
+a:any-link {
   color: #fff;
 }
 
 /* 共通ボタンスタイル */
 .btn-text {
   position: relative;
+  overflow: visible;
   z-index: 3; /* 擬似要素より前面 */
 }
 
@@ -289,4 +293,8 @@ a {
 
 /* ==========================
   ColorSelect.html
+  ========================== */
+
+/* ==========================
+  result.html
   ========================== */
