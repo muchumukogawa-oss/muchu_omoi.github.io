@@ -201,23 +201,72 @@ a:any-link {
   text-align: center;
 }
 
-/* 遊び方画像を基準に配置 */
-.howto-play {
+.card {
   position: relative;
-  width: 60vw;
-  max-width: 600px;
-  margin: 8vh auto 0 auto;
+  background-color: #fff;
+  border: 3px solid #000;
+  border-radius: 12px;
+  width: 354px;
+  padding: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
-/* 遊び方 */
-.howto-img {
+/* 点線の影部分 */
+.card::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  border-right: 4px dotted #000;
+  border-bottom: 4px dotted #000;
+  border-radius: 12px;
+  z-index: 0;
+}
+.title {
+  font-size: 32px;
+  margin: 8px;
+  position: relative;
+  line-height: 160%;
+}
+
+.title ruby rt {
+  font-size: 12px;
+}
+
+hr {
+  border: none;
+  border-top: 3px solid #000;
+  margin: 8px 0 16px;
+}
+.steps {
+  text-align: left;
+  font-size: 18px;
+  line-height: 180%;
+}
+
+.steps ruby rt {
+  font-size: 10px;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+ol li {
+  list-style: none;
+  padding-left: 1.3em;
+  text-indent: -1.3em;
 }
 
 /* 快適くん（右下に配置・遊び方画像の半分の大きさ） */
 .comfortable-in-howto {
+  margin-top: 28px;
+  margin-right: 22px;
+  /* margin-bottom: px; */
   position: absolute;
   bottom: -55%; /* 少し下に出す感じ */
   right: -8%;
@@ -227,7 +276,7 @@ a:any-link {
 
 /* 次へボタン */
 .next {
-  margin-top: 15vh;
+  margin-top: 177px;
 }
 
 /* .next-btn {
