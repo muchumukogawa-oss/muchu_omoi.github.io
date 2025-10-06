@@ -275,7 +275,8 @@ ol li {
 
 /* 次へボタン */
 .next {
-  margin-top: 200px;
+  margin-top: 177px;
+  padding-top: 29px;
 }
 
 /* .next-btn {
