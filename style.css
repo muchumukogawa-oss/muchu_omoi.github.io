@@ -203,7 +203,6 @@ a:any-link {
   border-radius: 12px;
   width: 354px;
   padding: 16px;
-  margin-top: 143px;
   text-align: center;
   box-sizing: border-box;
   z-index: 1;
@@ -275,19 +274,9 @@ ol li {
   padding-top: 29px;
 }
 
-/* .next-btn {
-  width: 167px;
-  height: 69px;
-} */
-
 /* ==========================
   BoothSelect.html
   ========================== */
-
-/* .decide-btn {
-  width: 167px;
-  height: 69px;
-} */
 
 .radio-group {
   display: flex;
