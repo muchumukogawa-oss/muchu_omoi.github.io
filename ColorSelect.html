@@ -21,13 +21,28 @@
       </div>
       <br />
       <!-- 決定 -->
-      <a href="result.html"
-        ><button class="custom-btn decide-btn">
-          <span class="btn-text"
-            ><ruby>決定<rt>けってい</rt></ruby></span
-          >
-        </button></a
-      >
+      <button id="decideBtn" class="custom-btn decide-btn">
+        <span class="btn-text"
+          ><ruby>決定<rt>けってい</rt></ruby></span
+        >
+      </button>
+    </div>
+    <!-- 確認ポップアップ -->
+    <div id="confirmPopup" class="confirm-popup">
+      <div class="popup-content">
+        <p>
+          <ruby>本当<rt>ほんとう</rt></ruby
+          >にこれでいいですか？
+        </p>
+        <div class="confirm-buttons">
+          <button id="yesBtn" class="custom-btn yes-btn">
+            <span class="btn-text">はい</span>
+          </button>
+          <button id="noBtn" class="custom-btn no-btn">
+            <span class="btn-text">いいえ</span>
+          </button>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
