@@ -100,17 +100,8 @@ a:any-link {
 
 /* ロゴ */
 .logo img {
-  width: 45vw; /* 画面幅の45% */
-  max-width: 500px; /* 最大幅 */
-  margin-top: 20px;
-  margin-bottom: 30px; /* ロゴと「はじめる」の間隔 */
+  margin-bottom: 69px; /* ロゴと「はじめる」の間隔 */
 }
-
-/* はじめる */
-/* .start-btn {
-  width: 167px;
-  height: 69px;
-} */
 
 /* 感情キャラたちの位置指定 */
 .emotion {
@@ -124,24 +115,28 @@ a:any-link {
 .anger {
   top: 2vw;
   left: 2vw;
+  transform: rotate(38.25deg); /* 38.25度傾ける */
 }
 
 /* 信頼くん：右上 */
 .trust {
   top: 2vw;
   right: 2vw;
+  transform: rotate(-32.776deg); /* -32.776度傾ける */
 }
 
 /* 快適くん：左下 */
 .comfortable {
   bottom: 2vw;
   left: 2vw;
+  transform: rotate(12.781deg); /* 12.781度傾ける */
 }
 
 /* 悲しみくん：右下 */
 .sad {
   bottom: 2vw;
   right: 2vw;
+  transform: rotate(-37.173deg);
 }
 
 /* ポップアップ全体 */
