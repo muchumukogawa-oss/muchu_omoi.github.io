@@ -262,11 +262,10 @@ ol li {
   text-indent: -1.3em;
 }
 
-/* 快適くん（右下に配置・遊び方画像の半分の大きさ） */
+/* 快適くん */
 .comfortable-in-howto {
   margin-top: 28px;
   margin-right: 22px;
-  /* margin-bottom: px; */
   position: absolute;
   bottom: -55%; /* 少し下に出す感じ */
   right: -8%;
@@ -276,7 +275,7 @@ ol li {
 
 /* 次へボタン */
 .next {
-  margin-top: 177px;
+  margin-top: 200px;
 }
 
 /* .next-btn {
