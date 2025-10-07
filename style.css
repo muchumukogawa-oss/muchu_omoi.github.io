@@ -115,6 +115,8 @@ a:any-link {
 .anger {
   top: 2vw;
   left: 2vw;
+  width: 235.51px;
+  height: auto;
   transform: rotate(38.25deg); /* 38.25度傾ける */
 }
 
@@ -122,6 +124,8 @@ a:any-link {
 .trust {
   top: 2vw;
   right: 2vw;
+  width: 210.855px;
+  height: auto;
   transform: rotate(-32.776deg); /* -32.776度傾ける */
 }
 
@@ -129,6 +133,8 @@ a:any-link {
 .comfortable {
   bottom: 2vw;
   left: 2vw;
+  width: 225.711px;
+  height: auto;
   transform: rotate(12.781deg); /* 12.781度傾ける */
 }
 
@@ -136,6 +142,8 @@ a:any-link {
 .sad {
   bottom: 2vw;
   right: 2vw;
+  width: 244.419px;
+  height: auto;
   transform: rotate(-37.173deg);
 }
 
@@ -350,7 +358,7 @@ ol li {
 }
 
 /* ==========================
-  AreaSelect.html
+  AreaSelect.html,ColorSelect.html
   ========================== */
 /* 確認ポップアップ全体 */
 .confirm-popup {
@@ -430,14 +438,14 @@ ol li {
 }
 
 /* ボタン4象限 */
-.button-grid {
+.button-4grid {
   display: grid;
   grid-template-columns: repeat(2, 150px); /* 横2列 */
   grid-template-rows: repeat(2, 150px); /* 縦2行 */
   /* gap: 10px; ボタンの間隔 */
 }
 
-.button-grid button {
+.button-4grid button {
   width: 150px;
   height: 150px;
   font-size: 20px;
