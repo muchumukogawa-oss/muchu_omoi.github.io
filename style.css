@@ -467,7 +467,7 @@ ol li {
   /* gap: 10px; ボタンの間隔 */
   /* 背景画像 */
   background-image: url('img/色全体_線あり修正版.png');
-  background-size: cover; /* 枠に合わせて拡大縮小 */
+  background-size: cover; /*枠に合わせて拡大縮小*/
   background-position: center;
 }
 
@@ -514,9 +514,9 @@ ol li {
   background: transparent;
 }
 
-#1_area {
+#area1 {
   background-image: url('img/ポジティブ動的.png');
-  background-size: cover; /* 枠に合わせて拡大縮小 */
+  background-size: cover; /*枠に合わせて拡大縮小 */
   background-position: center;
 }
 
