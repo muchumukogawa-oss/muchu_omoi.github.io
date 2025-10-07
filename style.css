@@ -36,6 +36,12 @@ rt {
   /* margin-bottom: 82px; */
 }
 
+.h2_color {
+  position: relative;
+  bottom: 10px;
+  /* margin-bottom: 82px; */
+}
+
 a {
   text-decoration: none;
 }
@@ -497,6 +503,10 @@ ol li {
   cursor: pointer;
   border-radius: 0;
   border: 0.5px solid #ccc;
+}
+
+#decideBtn {
+  margin-top: 30px;
 }
 
 /* ==========================
