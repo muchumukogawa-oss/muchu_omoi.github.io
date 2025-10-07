@@ -30,6 +30,12 @@ rt {
   text-align: center;
 }
 
+/* image */
+img {
+  width: 384px;
+  height: 294px;
+}
+
 #h2 {
   position: relative;
   bottom: 90px;
