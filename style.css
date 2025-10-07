@@ -520,6 +520,24 @@ ol li {
   background-position: center;
 }
 
+#area2 {
+  background-image: url('img/ポジティブ静的.png');
+  background-size: cover; /*枠に合わせて拡大縮小 */
+  background-position: center;
+}
+
+#area3 {
+  background-image: url('img/ネガティブ静的.png');
+  background-size: cover; /*枠に合わせて拡大縮小 */
+  background-position: center;
+}
+
+#area4 {
+  background-image: url('img/ネガティブ動的.png');
+  background-size: cover; /*枠に合わせて拡大縮小 */
+  background-position: center;
+}
+
 .h2_color {
   position: relative;
   bottom: 30px;
