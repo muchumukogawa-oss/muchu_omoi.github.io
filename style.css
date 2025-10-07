@@ -31,9 +31,9 @@ rt {
 }
 
 #h2 {
-  /* position: relative; */
-  /* top: 100px; */
-  margin-bottom: 82px;
+  position: relative;
+  bottom: 90px;
+  /* margin-bottom: 82px; */
 }
 
 a {
@@ -453,6 +453,8 @@ ol li {
 
 /* ボタン4象限 */
 .button-4grid {
+  position: relative;
+  bottom: 50px;
   display: grid;
   grid-template-columns: repeat(2, 180px); /* 横2列 */
   grid-template-rows: repeat(2, 180px); /* 縦2行 */
