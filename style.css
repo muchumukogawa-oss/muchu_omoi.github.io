@@ -30,6 +30,11 @@ rt {
   text-align: center;
 }
 
+.h2 {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -458,7 +463,8 @@ ol li {
   height: 180px;
   font-size: 20px;
   cursor: pointer;
-  /* border-radius: 8px; */
+  border-radius: 0;
+  border: 0.5px solid #ccc;
 }
 
 /* ボタン配置 */
