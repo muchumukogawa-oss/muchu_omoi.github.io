@@ -101,29 +101,27 @@ noBtn.addEventListener('click', () => {
 // result.html 用
 const image_list = ['img/仮画像.png', 'img/画像仮2.png'];
 
+// ...existing code...
 const img = document.getElementById('main'); // 画像
 const [leftArrow, rightArrow] = document.getElementsByTagName('span');
-// ページ読み込み時に実行される
-document.addEventListener('DOMContentLoaded', () => {
-  img.src = image_list[0]; // 1枚目（配列listの先頭）を設定
-});
-let imgN = 0; // 現在のファイル番号
 
-// 右矢印ボタンをクリックしたときに実行される
-rightArrow.addEventListener('click', () => {
-  if (imgN === image_list.length - 1) {
-    return; // 最後の画像なら何もしない
-  } else {
-    imgN += 1; // インデックスを一つ進めて…
-    img.src = image_list[imgN]; // src属性を書き換え
+document.addEventListener('DOMContentLoaded', () => {
+  if (img) {
+    img.src = image_list[0];
   }
 });
-// 左矢印ボタンをクリックしたときに実行される
-leftArrow.addEventListener('click', () => {
-  if (imgN === 0) {
-    return; // 最初の画像なら何もしない
-  } else {
+
+let imgN = 0;
+
+if (img && leftArrow && rightArrow) {
+  rightArrow.addEventListener('click', () => {
+    if (imgN === image_list.length - 1) return;
+    imgN += 1;
+    img.src = image_list[imgN];
+  });
+  leftArrow.addEventListener('click', () => {
+    if (imgN === 0) return;
     imgN -= 1;
     img.src = image_list[imgN];
-  }
-});
+  });
+}

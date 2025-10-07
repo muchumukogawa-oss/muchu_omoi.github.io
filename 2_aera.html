@@ -20,22 +20,22 @@
         </h2>
       </div>
       <div class="button-16grid" id="area2">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>10</button>
-        <button>11</button>
-        <button>12</button>
-        <button>13</button>
-        <button>14</button>
-        <button>15</button>
-        <button>16</button>
+        <button id="#cde3f3">1</button>
+        <button id="#f1cecd">2</button>
+        <button id="#f6dff2">3</button>
+        <button id="#5fad5c">4</button>
+        <button id="#9ec8e7">5</button>
+        <button id="#e79e9b">6</button>
+        <button id="#e3f8fa">7</button>
+        <button id="#fdffd1">8</button>
+        <button id="#6d93d2">9</button>
+        <button id="#c1e3a8">10</button>
+        <button id="#cbf0f6">11</button>
+        <button id="#fcfea6">12</button>
+        <button id="#405d94">13</button>
+        <button id="#7ab1dc">14</button>
+        <button id="#7ed2e0">15</button>
+        <button id="#eeb4fa">16</button>
       </div>
       <!-- 決定 -->
       <button id="decideBtn" class="custom-btn decide-btn">
@@ -45,9 +45,11 @@
       </button>
     </div>
     <!-- 確認ポップアップ -->
-    <div id="confirmPopup" class="confirm-popup">
+    <!-- ...existing code... -->
+    <div id="confirmPopup" class="confirm-popup" style="display: none">
       <div class="popup-content">
         <p class="popup-text">これでいいですか？</p>
+        <div class="color-circle" id="selectedColor"></div>
         <div class="confirm-buttons">
           <button id="yesBtn" class="custom-btn yes-btn">
             <span class="btn-text">はい</span>
@@ -58,6 +60,7 @@
         </div>
       </div>
     </div>
+    <!-- ...existing code... -->
     <script src="script.js"></script>
   </body>
 </html>
