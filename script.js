@@ -85,11 +85,19 @@ let imgN = 0; // 現在のファイル番号
 
 // 右矢印ボタンをクリックしたときに実行される
 rightArrow.addEventListener('click', () => {
-  imgN += 1; // インデックスを一つ進めて…
-  img.src = image_list[imgN]; // src属性を書き換え
+  if (imgN === image_list.length - 1) {
+    return; // 最後の画像なら何もしない
+  } else {
+    imgN += 1; // インデックスを一つ進めて…
+    img.src = image_list[imgN]; // src属性を書き換え
+  }
 });
 // 左矢印ボタンをクリックしたときに実行される
 leftArrow.addEventListener('click', () => {
-  imgN -= 1;
-  img.src = image_list[imgN];
+  if (imgN === 0) {
+    return; // 最初の画像なら何もしない
+  } else {
+    imgN -= 1;
+    img.src = image_list[imgN];
+  }
 });
