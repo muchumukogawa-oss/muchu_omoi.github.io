@@ -454,5 +454,25 @@ ol li {
 }
 
 /* ==========================
+  num_area.html
+  ========================== */
+
+/* 16色選択 */
+.button-16grid {
+  display: grid;
+  grid-template-columns: repeat(2, 150px); /* 横2列 */
+  grid-template-rows: repeat(2, 150px); /* 縦2行 */
+  /* gap: 10px; ボタンの間隔 */
+}
+
+.button-16grid button {
+  width: 150px;
+  height: 150px;
+  font-size: 20px;
+  cursor: pointer;
+  /* border-radius: 8px; */
+}
+
+/* ==========================
   result.html
   ========================== */
