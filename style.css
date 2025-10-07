@@ -290,7 +290,7 @@ ol li {
   margin-top: 28px;
   margin-right: 22px;
   position: absolute;
-  bottom: -55%; /* 少し下に出す感じ */
+  bottom: -65%; /* 少し下に出す感じ */
   right: -8%;
   width: 50%;
   height: auto;
@@ -474,6 +474,7 @@ ol li {
   cursor: pointer;
   border-radius: 0;
   border: 0.5px solid #ccc;
+  background: transparent;
 }
 
 /* ボタン配置 */
@@ -494,6 +495,8 @@ ol li {
   grid-template-columns: repeat(4, 90px); /* 横2列 */
   grid-template-rows: repeat(4, 90px); /* 縦2行 */
   /* gap: 10px; ボタンの間隔 */
+  /* 背景透明 */
+  background: transparent;
 }
 
 .button-16grid button {
@@ -503,6 +506,8 @@ ol li {
   cursor: pointer;
   border-radius: 0;
   border: 0.5px solid #ccc;
+  /* 背景透明 */
+  background: transparent;
 }
 
 .h2_color {
