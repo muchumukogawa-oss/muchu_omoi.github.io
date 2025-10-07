@@ -71,3 +71,25 @@ if (decideBtn && confirmPopup && yesBtn && noBtn) {
     confirmPopup.style.display = 'none';
   });
 }
+
+// result.html 用
+const image_list = ['img/仮画像.png', 'img/画像仮2.png'];
+
+const img = document.getElementById('main'); // 画像
+const [leftArrow, rightArrow] = document.getElementsByTagName('span');
+// ページ読み込み時に実行される
+document.addEventListener('DOMContentLoaded', () => {
+  img.src = image_list[0]; // 1枚目（配列listの先頭）を設定
+});
+let imgN = 0; // 現在のファイル番号
+
+// 右矢印ボタンをクリックしたときに実行される
+rightArrow.addEventListener('click', () => {
+  imgN += 1; // インデックスを一つ進めて…
+  img.src = image_list[imgN]; // src属性を書き換え
+});
+// 左矢印ボタンをクリックしたときに実行される
+leftArrow.addEventListener('click', () => {
+  imgN -= 1;
+  img.src = image_list[imgN];
+});
