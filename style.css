@@ -350,7 +350,7 @@ ol li {
 }
 
 /* ==========================
-  AreaSelect.html
+  AreaSelect.html,ColorSelect.html
   ========================== */
 /* 確認ポップアップ全体 */
 .confirm-popup {
@@ -430,14 +430,14 @@ ol li {
 }
 
 /* ボタン4象限 */
-.button-grid {
+.button-4grid {
   display: grid;
   grid-template-columns: repeat(2, 150px); /* 横2列 */
   grid-template-rows: repeat(2, 150px); /* 縦2行 */
   /* gap: 10px; ボタンの間隔 */
 }
 
-.button-grid button {
+.button-4grid button {
   width: 150px;
   height: 150px;
   font-size: 20px;
