@@ -499,6 +499,16 @@ ol li {
   border: 0.5px solid #ccc;
 }
 
+.h2_color {
+  position: relative;
+  bottom: 30px;
+  /* margin-bottom: 82px; */
+}
+
+#decideBtn {
+  margin-top: 30px;
+}
+
 /* ==========================
   result.html
   ========================== */

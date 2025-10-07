@@ -27,7 +27,7 @@ if (startBtn && popup && closeBtn && agreeBtn) {
 
 //ラジオボタン
 // const radio_select = document.querySelector('select');
-// radio_select.addEventListener('change', () => {});
+// radio_select.addEventListener('changedecideBtn', () => {});
 
 const drop_select = document.querySelector('select');
 if (drop_select) {
