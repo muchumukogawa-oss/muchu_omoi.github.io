@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>おもいのパレット-４象限色選択</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 全体 -->
+    <div class="page-container">
+      <!-- 色選択 -->
+      <div>
+        <h2 style="text-align: center">
+          あなたの<ruby>思<rt>おも</rt></ruby
+          >う「おもい」の<ruby>色<rt>いろ</rt></ruby
+          >を<br /><ruby>選<rt>えら</rt></ruby
+          >んでタップしてね
+        </h2>
+      </div>
+      <br />
+      <!-- 決定 -->
+      <button id="decideBtn" class="custom-btn decide-btn">
+        <span class="btn-text"
+          ><ruby>決定<rt>けってい</rt></ruby></span
+        >
+      </button>
+    </div>
+    <!-- 確認ポップアップ -->
+    <div id="confirmPopup" class="confirm-popup">
+      <div class="popup-content">
+        <p class="popup-text">
+          <ruby>本当<rt>ほんとう</rt></ruby
+          >にこれでいいですか？
+        </p>
+        <div class="confirm-buttons">
+          <button id="yesBtn" class="custom-btn yes-btn">
+            <span class="btn-text">はい</span>
+          </button>
+          <button id="noBtn" class="no-btn">
+            <span class="btn-text">いいえ</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
