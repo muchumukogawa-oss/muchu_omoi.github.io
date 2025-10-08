@@ -50,27 +50,7 @@ if (radio_selects.length > 0) {
 
 // ColorSelect.html 用
 const decideBtn = document.getElementById('decideBtn');
-// const confirmPopup = document.getElementById('confirmPopup');
-// const yesBtn = document.getElementById('yesBtn');
-// const noBtn = document.getElementById('noBtn');
 
-// if (decideBtn && confirmPopup && yesBtn && noBtn) {
-//   // 決定ボタン押下時にポップアップ表示
-//   decideBtn.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     confirmPopup.style.display = 'flex';
-//   });
-
-//   // 「はい」→ result.html に遷移
-//   yesBtn.addEventListener('click', () => {
-//     window.location.href = 'result.html';
-//   });
-
-//   // 「いいえ」→ ポップアップを閉じる
-//   noBtn.addEventListener('click', () => {
-//     confirmPopup.style.display = 'none';
-//   });
-// }
 const buttons = document.querySelectorAll('.button-16grid button');
 const confirmPopup = document.getElementById('confirmPopup');
 const selectedColorCircle = document.getElementById('selectedColor');
