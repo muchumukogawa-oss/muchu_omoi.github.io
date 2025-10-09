@@ -489,6 +489,54 @@ ol li {
   margin: 0 10px;
 }
 
+/* 軸ラベル */
+/* 軸ラベル共通 */
+.positive-label,
+.negative-label,
+.dynamic-label,
+.static-label {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  pointer-events: none; /* クリック操作を邪魔しない */
+}
+
+/* ポジティブ：#2_area と #1_area の真ん中上部 */
+.positive-label {
+  position: absolute;
+  top: -50px; /* ボタン上の位置（上下調整用） */
+  left: 50%; /* 横の中央 */
+  transform: translateX(-50%);
+}
+
+/* ネガティブ：#3_area と #4_area の真ん中下部 */
+.negative-label {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 動的：#1_area と #4_area の真ん中右部 */
+.dynamic-label {
+  position: absolute;
+  top: 176px;
+  right: -35px;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を正立表示 */
+}
+/* 静的：#2_area と #3_area の真ん中左部 */
+.static-label {
+  position: absolute;
+  top: 176px;
+  left: -35px;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を正立表示 */
+}
+
 /* ==========================
   num_area.html
   ========================== */
