@@ -209,9 +209,18 @@ if (buttons.length > 0 && confirmPopup && selectedColorCircle && yesBtn && noBtn
 //   let imgN = 0;
 //   let imageList = [];
 
+// function updateArrows() {
+//   if (!leftArrow || !rightArrow) return;
+//   // 左端なら左矢印非表示
+//   leftArrow.style.display = imgN === 0 ? 'none' : 'block';
+//   // 右端なら右矢印非表示
+//   rightArrow.style.display = imgN === imageList.length - 1 ? 'none' : 'block';
+// }
+
 //   if (img && area && color && imageMap[area] && imageMap[area][color]) {
 //     imageList = imageMap[area][color];
 //     img.src = imageList[imgN];
+//  updateArrows();
 
 //     // スライドショーのイベント
 //     if (leftArrow && rightArrow) {
@@ -219,16 +228,20 @@ if (buttons.length > 0 && confirmPopup && selectedColorCircle && yesBtn && noBtn
 //         if (imgN > 0) {
 //           imgN -= 1;
 //           img.src = imageList[imgN];
+// updateArrows();
 //         }
 //       });
 //       rightArrow.addEventListener('click', () => {
 //         if (imgN < imageList.length - 1) {
 //           imgN += 1;
 //           img.src = imageList[imgN];
+// updateArrows();
 //         }
 //       });
 //     }
 //   } else if (img) {
 //     img.src = 'img/仮画像.png';
+// if (leftArrow) leftArrow.style.display = 'none';
+// if (rightArrow) rightArrow.style.display = 'none';
 //   }
 // }
