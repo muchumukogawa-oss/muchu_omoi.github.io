@@ -119,129 +119,128 @@ if (buttons.length > 0 && confirmPopup && selectedColorCircle && yesBtn && noBtn
 // 以下実行コード　　エラー出るためコメントアウト中
 // if (window.location.pathname.endsWith('result.html')) {
 //   // 各エリアごとにカラーコードと画像パスを管理
-//   const imageMap = {
-//     1: {
-//       "#92d050": ['img/仮画像.png','img/画像仮2.png'],
-//       "#ffee00": ['img/area1/2.png'],
-//       "#ffd500":,
-//       "#db3522":,
-//       "#f5fe68":,
-//       "#dc6c2d":,
-//       "#dc6c2d":,
-//       "#dd544b":,
-//       "#f8f371":,
-//       "#ebbc5c":,
-//       "#e898dc":,
-//       "#e48f8c":,
-//       "#ebe94f":,
-//       "#deac89":,
-//       "#f0cea0":,
-//       "#f0cea0":,
-//       // ... 1エリアの16色分
-//     },
-//     2: {
-//       "#cde3f3": 'img/area2/1.png',
-//       "#f1cecd": 'img/area2/2.png',
-//       "#f6dff2":,
-//       "#5fad5c":,
-//       "#9ec8e7":,
-//       "#e79e9b":,
-//       "#e3f8fa":,
-//       "#fdffd1":,
-//       "#6d93d2":,
-//       "#c1e3a8":,
-//       "#cbf0f6":,
-//       "#fcfea6":,
-//       "#405d94":,
-//       "#7ab1dc":,
-//       "#7ed2e0":,
-//       "#eeb4fa":,
-//       // ... 2エリアの16色分
-//     },
-//     3: {
-//       "#d0d0d0": 'img/area3/1.png',
-//       "#5d93c4": 'img/area3/2.png',
-//       "#64a8b4":,
-//       "#729f4f":,
-//       "#747474":,
-//       "#426a8c":,
-//       "#406a7e":,
-//       "#52714a":,
-//       "#3a3a3a":,
-//       "#2b475f":,
-//       "#2e5055":,
-//       "#3c542a":,
-//       "#000000":,
-//       "#1c2f3f":,
-//       "#233f43":,
-//       "#595959":,
-//       // ... 3エリアの16色分
-//     },
-//     4: {
-//       "#cdcd44": 'img/area4/1.png',
-//       "#c797cf": 'img/area4/2.png',
-//       "#9788ad":,
-//       "#b16159":,
-//       "#838328":,
-//       "#8d6b9f":,
-//       "#9c615f":,
-//       "#b82b1b":,
-//       "#525216":,
-//       "#7c657f":,
-//       "#be6948":,
-//       "#83361d":,
-//       "#3b0703":,
-//       "#69296c":,
-//       "#983162":,
-//       "#69140b":,
-//       // ... 4エリアの16色分
-//     }
-//   };
-//   // URLパラメータからエリアとカラーコードを取得
+const imageMap = {
+  1: {
+    '#92d050': ['img/area1/001.PNG', 'img/area1/101.PNG'],
+    '#ffee00': ['img/area1/002.PNG', 'img/area1/102.PNG'],
+    '#ffd500': ['img/area1/003.PNG', 'img/area1/103.PNG'],
+    '#db3522': ['img/area1/004.PNG', 'img/area1/104.PNG'],
+    '#f5fe68': ['img/area1/005.PNG', 'img/area1/105.PNG'],
+    '#dc6c2d': ['img/area1/006.PNG', 'img/area1/106.PNG'],
+    '#dc6c2d': ['img/area1/007.PNG', 'img/area1/107.PNG'],
+    '#dd544b': ['img/area1/008.PNG', 'img/area1/108.PNG'],
+    '#f8f371': ['img/area1/009.PNG', 'img/area1/109.PNG'],
+    '#ebbc5c': ['img/area1/010.PNG', 'img/area1/110.PNG'],
+    '#e898dc': ['img/area1/011.PNG', 'img/area1/111.PNG'],
+    '#e48f8c': ['img/area1/012.PNG', 'img/area1/112.PNG'],
+    '#ebe94f': ['img/area1/013.PNG', 'img/area1/113.PNG'],
+    '#deac89': ['img/area1/014.PNG', 'img/area1/113.PNG'],
+    '#f0cea0': ['img/area1/015.PNG', 'img/area1/115.PNG'],
+    '#f0cea0': ['img/area1/016.PNG', 'img/area1/116.PNG']
+    // ... 1エリアの16色分
+  },
+  2: {
+    '#cde3f3': ['img/area2/001.PNG', 'img/area2/101.PNG'],
+    '#f1cecd': ['img/area2/002.PNG', 'img/area2/102.PNG'],
+    '#f6dff2': ['img/area2/003.PNG', 'img/area2/103.PNG'],
+    '#5fad5c': ['img/area2/004.PNG', 'img/area2/104.PNG'],
+    '#9ec8e7': ['img/area2/005.PNG', 'img/area2/105.PNG'],
+    '#e79e9b': ['img/area2/006.PNG', 'img/area2/106.PNG'],
+    '#e3f8fa': ['img/area2/007.PNG', 'img/area2/107.PNG'],
+    '#fdffd1': ['img/area2/008.PNG', 'img/area2/108.PNG'],
+    '#6d93d2': ['img/area2/009.PNG', 'img/area2/109.PNG'],
+    '#c1e3a8': ['img/area2/010.PNG', 'img/area2/110.PNG'],
+    '#cbf0f6': ['img/area2/011.PNG', 'img/area2/111.PNG'],
+    '#fcfea6': ['img/area2/012.PNG', 'img/area2/112.PNG'],
+    '#405d94': ['img/area2/013.PNG', 'img/area2/113.PNG'],
+    '#7ab1dc': ['img/area2/014.PNG', 'img/area2/114.PNG'],
+    '#7ed2e0': ['img/area2/015.PNG', 'img/area2/115.PNG'],
+    '#eeb4fa': ['img/area2/016.PNG', 'img/area2/116.PNG']
+    // ... 2エリアの16色分
+  },
+  3: {
+    '#d0d0d0': ['img/area3/001.PNG', 'img/area3/101.PNG'],
+    '#5d93c4': ['img/area3/002.PNG', 'img/area3/102.PNG'],
+    '#64a8b4': ['img/area3/003.PNG', 'img/area3/103.PNG'],
+    '#729f4f': ['img/area3/004.PNG', 'img/area3/104.PNG'],
+    '#747474': ['img/area3/005.PNG', 'img/area3/105.PNG'],
+    '#426a8c': ['img/area3/006.PNG', 'img/area3/106.PNG'],
+    '#406a7e': ['img/area3/007.PNG', 'img/area3/107.PNG'],
+    '#52714a': ['img/area3/008.PNG', 'img/area3/108.PNG'],
+    '#3a3a3a': ['img/area3/009.PNG', 'img/area3/109.PNG'],
+    '#2b475f': ['img/area3/010.PNG', 'img/area3/110.PNG'],
+    '#2e5055': ['img/area3/011.PNG', 'img/area3/111.PNG'],
+    '#3c542a': ['img/area3/012.PNG', 'img/area3/112.PNG'],
+    '#000000': ['img/area3/013.PNG', 'img/area3/113.PNG'],
+    '#1c2f3f': ['img/area3/014.PNG', 'img/area3/114.PNG'],
+    '#233f43': ['img/area3/015.PNG', 'img/area3/115.PNG'],
+    '#595959': ['img/area3/016.PNG', 'img/area3/116.PNG']
+    // ... 3エリアの16色分
+  },
+  4: {
+    '#cdcd44': ['img/area4/001.PNG', 'img/area4/101.PNG'],
+    '#c797cf': ['img/area4/002.PNG', 'img/area4/102.PNG'],
+    '#9788ad': ['img/area4/003.PNG', 'img/area4/103.PNG'],
+    '#b16159': ['img/area4/004.PNG', 'img/area4/104.PNG'],
+    '#838328': ['img/area4/005.PNG', 'img/area4/105.PNG'],
+    '#8d6b9f': ['img/area4/006.PNG', 'img/area4/106.PNG'],
+    '#9c615f': ['img/area4/007.PNG', 'img/area4/107.PNG'],
+    '#b82b1b': ['img/area4/008.PNG', 'img/area4/108.PNG'],
+    '#525216': ['img/area4/009.PNG', 'img/area4/109.PNG'],
+    '#7c657f': ['img/area4/010.PNG', 'img/area4/110.PNG'],
+    '#be6948': ['img/area4/011.PNG', 'img/area4/111.PNG'],
+    '#83361d': ['img/area4/012.PNG', 'img/area4/112.PNG'],
+    '#3b0703': ['img/area4/013.PNG', 'img/area4/113.PNG'],
+    '#69296c': ['img/area4/014.PNG', 'img/area4/114.PNG'],
+    '#983162': ['img/area4/015.PNG', 'img/area4/115.PNG'],
+    '#69140b': ['img/area4/016.PNG', 'img/area4/116.PNG']
+    // ... 4エリアの16色分
+  }
+};
+// URLパラメータからエリアとカラーコードを取得
 
-//   const params = new URLSearchParams(window.location.search);
-//   const area = params.get('area');
-//   const color = params.get('color');
-//   const img = document.getElementById('main');
-//   const leftArrow = document.querySelector('.leftArrow');
-//   const rightArrow = document.querySelector('.rightArrow');
+const params = new URLSearchParams(window.location.search);
+const area = params.get('area');
+const color = params.get('color');
+const img = document.getElementById('main');
+const leftArrow = document.querySelector('.leftArrow');
+const rightArrow = document.querySelector('.rightArrow');
 
-//   let imgN = 0;
-//   let imageList = [];
+let imgN = 0;
+let imageList = [];
 
-// function updateArrows() {
-//   if (!leftArrow || !rightArrow) return;
-//   // 左端なら左矢印非表示
-//   leftArrow.style.display = imgN === 0 ? 'none' : 'block';
-//   // 右端なら右矢印非表示
-//   rightArrow.style.display = imgN === imageList.length - 1 ? 'none' : 'block';
-// }
+function updateArrows() {
+  if (!leftArrow || !rightArrow) return;
+  // 左端なら左矢印非表示
+  leftArrow.style.display = imgN === 0 ? 'none' : 'block';
+  // 右端なら右矢印非表示
+  rightArrow.style.display = imgN === imageList.length - 1 ? 'none' : 'block';
+}
 
-//   if (img && area && color && imageMap[area] && imageMap[area][color]) {
-//     imageList = imageMap[area][color];
-//     img.src = imageList[imgN];
-//  updateArrows();
+if (img && area && color && imageMap[area] && imageMap[area][color]) {
+  imageList = imageMap[area][color];
+  img.src = imageList[imgN];
+  updateArrows();
 
-//     // スライドショーのイベント
-//     if (leftArrow && rightArrow) {
-//       leftArrow.addEventListener('click', () => {
-//         if (imgN > 0) {
-//           imgN -= 1;
-//           img.src = imageList[imgN];
-// updateArrows();
-//         }
-//       });
-//       rightArrow.addEventListener('click', () => {
-//         if (imgN < imageList.length - 1) {
-//           imgN += 1;
-//           img.src = imageList[imgN];
-// updateArrows();
-//         }
-//       });
-//     }
-//   } else if (img) {
-//     img.src = 'img/仮画像.png';
-// if (leftArrow) leftArrow.style.display = 'none';
-// if (rightArrow) rightArrow.style.display = 'none';
-//   }
-// }
+  // スライドショーのイベント
+  if (leftArrow && rightArrow) {
+    leftArrow.addEventListener('click', () => {
+      if (imgN > 0) {
+        imgN -= 1;
+        img.src = imageList[imgN];
+        updateArrows();
+      }
+    });
+    rightArrow.addEventListener('click', () => {
+      if (imgN < imageList.length - 1) {
+        imgN += 1;
+        img.src = imageList[imgN];
+        updateArrows();
+      }
+    });
+  }
+} else if (img) {
+  img.src = 'img/仮画像.png';
+  if (leftArrow) leftArrow.style.display = 'none';
+  if (rightArrow) rightArrow.style.display = 'none';
+}
