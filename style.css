@@ -714,14 +714,6 @@ ol li {
   /* 右端 */
   right: 33px;
 }
-/* 
-.arrow {
-  position: relative;
-  display: inline-block;
-  color: #000;
-  vertical-align: middle;
-  text-decoration: none;
-} */
 
 .arrow::before,
 .arrow::after {
