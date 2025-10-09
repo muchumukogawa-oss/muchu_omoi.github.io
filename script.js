@@ -84,8 +84,6 @@ if (buttons.length > 0 && confirmPopup && selectedColorCircle && yesBtn && noBtn
 }
 
 // result.html 用
-
-// 以下実行コード　　エラー出るためコメントアウト中
 if (window.location.pathname.endsWith('result.html')) {
   //   // 各エリアごとにカラーコードと画像パスを管理
   const imageMap = {
