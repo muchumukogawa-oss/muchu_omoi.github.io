@@ -134,7 +134,7 @@ const imageMap = {
     '#e898dc': ['img/area1/011.PNG', 'img/area1/111.PNG'],
     '#e48f8c': ['img/area1/012.PNG', 'img/area1/112.PNG'],
     '#ebe94f': ['img/area1/013.PNG', 'img/area1/113.PNG'],
-    '#deac89': ['img/area1/014.PNG', 'img/area1/113.PNG'],
+    '#deac89': ['img/area1/014.PNG', 'img/area1/114.PNG'],
     '#f0cea0': ['img/area1/015.PNG', 'img/area1/115.PNG'],
     '#f0cea0': ['img/area1/016.PNG', 'img/area1/116.PNG']
     // ... 1エリアの16色分
