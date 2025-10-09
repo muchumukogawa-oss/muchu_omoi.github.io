@@ -502,47 +502,41 @@ ol li {
   pointer-events: none; /* クリック操作を邪魔しない */
 }
 
-.dynamic-label,
-.static-label {
-  color: #9e9b9b;
-  -webkit-text-stroke: 0.2px #000;
-  /* text-stroke: 1.5px #000; */
-  text-shadow: 0.5px 0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px -0.5px 0 #000;
-}
-
-/* ポジティブ：#2_area と #1_area の真ん中上部 */
-.positive-label {
-  position: absolute;
-  top: -50px; /* ボタン上の位置（上下調整用） */
+.positive-label,
+.negative-label {
   left: 50%; /* 横の中央 */
   transform: translateX(-50%);
 }
 
+.dynamic-label,
+.static-label {
+  top: 176px;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を正立表示 */
+  /* ↓縁 */
+  /* -webkit-text-stroke: 0.2px #000; */
+  /* text-shadow: 0.5px 0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px -0.5px 0 #000; */
+}
+
+/* ポジティブ：#2_area と #1_area の真ん中上部 */
+.positive-label {
+  top: -50px; /* ボタン上の位置（上下調整用） */
+}
+
 /* ネガティブ：#3_area と #4_area の真ん中下部 */
 .negative-label {
-  position: absolute;
   bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 /* 動的：#1_area と #4_area の真ん中右部 */
 .dynamic-label {
-  position: absolute;
-  top: 176px;
   right: -35px;
-  transform: translateY(-50%);
-  writing-mode: vertical-rl; /* 縦書き */
-  text-orientation: upright; /* 文字を正立表示 */
 }
 /* 静的：#2_area と #3_area の真ん中左部 */
 .static-label {
-  position: absolute;
-  top: 176px;
   left: -35px;
-  transform: translateY(-50%);
-  writing-mode: vertical-rl; /* 縦書き */
-  text-orientation: upright; /* 文字を正立表示 */
 }
 
 /* ==========================
