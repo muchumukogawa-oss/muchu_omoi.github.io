@@ -551,44 +551,8 @@ ol li {
   /* margin-bottom: 82px; */
 }
 
-#backBtn {
+#decideBtn {
   margin-top: 30px;
-}
-
-.back-btn {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12.5px 36.5px;
-  border: 2px solid var(--gray100, #616161);
-  border-radius: 100px;
-  font-family: 'Kosugi Maru';
-  font-size: 26px;
-  line-height: 160%;
-  color: #000; /* 文字色 */
-  cursor: pointer;
-  overflow: visible;
-  z-index: 2;
-}
-
-.back-btn::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 100px;
-  background: #fff; /* 白背景 */
-  z-index: 1; /* 文字より下 */
-}
-
-.back-btn::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 100px;
-  background: radial-gradient(circle, #000 30%, transparent 30%) 0 0 / 3px 3px;
-  transform: translate(6px, 5px);
-  z-index: 0; /* 背景のさらに下 */
 }
 
 /* ==========================
@@ -599,16 +563,40 @@ ol li {
 :root {
   --color: lightgray; /* 矢印の色 */
   --size: 4; /* 矢印の大きさ */
-  --weight: 2.5px; /* 枠の太さ */
+  --weight: 2.5px;
+  /* 枠の太さ */
 }
 
+#slideshow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px; /* 画像の高さに合わせて調整 */
+}
+.arrow {
+  position: absolute;
+  top: 50%; /* 画像の高さの半分 */
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.leftArrow {
+  left: 0; /* 左端 */
+}
+
+.rightArrow {
+  /* right: 0;  */
+  /* 右端 */
+  right: 33px;
+}
+/* 
 .arrow {
   position: relative;
   display: inline-block;
   color: #000;
   vertical-align: middle;
   text-decoration: none;
-}
+} */
 
 .arrow::before,
 .arrow::after {
