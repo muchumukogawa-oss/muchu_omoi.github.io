@@ -49,7 +49,7 @@ if (radio_selects.length > 0) {
 //AreaSelect.html,用
 
 // ColorSelect.html 用
-const decideBtn = document.getElementById('decideBtn');
+const backeBtn = document.getElementById('backBtn');
 
 const buttons = document.querySelectorAll('.button-16grid button');
 const confirmPopup = document.getElementById('confirmPopup');
