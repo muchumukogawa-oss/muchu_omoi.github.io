@@ -113,16 +113,16 @@ if (window.location.pathname.endsWith('result.html')) {
       '#00b050': ['img/area2/004.PNG', 'img/area2/104.PNG'],
       '#83caeb': ['img/area2/005.PNG', 'img/area2/105.PNG'],
       '#ff9999': ['img/area2/006.PNG', 'img/area2/106.PNG'],
-      '#e3f8fa': ['img/area2/007.PNG', 'img/area2/107.PNG'],
-      '#fdffd1': ['img/area2/008.PNG', 'img/area2/108.PNG'],
-      '#6d93d2': ['img/area2/009.PNG', 'img/area2/109.PNG'],
-      '#c1e3a8': ['img/area2/010.PNG', 'img/area2/110.PNG'],
-      '#cbf0f6': ['img/area2/011.PNG', 'img/area2/111.PNG'],
-      '#fcfea6': ['img/area2/012.PNG', 'img/area2/112.PNG'],
-      '#405d94': ['img/area2/013.PNG', 'img/area2/113.PNG'],
-      '#7ab1dc': ['img/area2/014.PNG', 'img/area2/114.PNG'],
-      '#7ed2e0': ['img/area2/015.PNG', 'img/area2/115.PNG'],
-      '#eeb4fa': ['img/area2/016.PNG', 'img/area2/116.PNG']
+      '#d9f9fb': ['img/area2/007.PNG', 'img/area2/107.PNG'],
+      '#ffcccc': ['img/area2/008.PNG', 'img/area2/108.PNG'],
+      '#4d94d8': ['img/area2/009.PNG', 'img/area2/109.PNG'],
+      '#b3e5a1': ['img/area2/010.PNG', 'img/area2/110.PNG'],
+      '#b7f2f7': ['img/area2/011.PNG', 'img/area2/111.PNG'],
+      '#ffff99': ['img/area2/012.PNG', 'img/area2/112.PNG'],
+      '#215e99': ['img/area2/013.PNG', 'img/area2/113.PNG'],
+      '#4bb3e1': ['img/area2/014.PNG', 'img/area2/114.PNG'],
+      '#1bd5e3': ['img/area2/015.PNG', 'img/area2/115.PNG'],
+      '#ffb0ff': ['img/area2/016.PNG', 'img/area2/116.PNG']
       // ... 2エリアの16色分
     },
     3: {
