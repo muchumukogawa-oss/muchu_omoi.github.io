@@ -552,6 +552,7 @@ ol li {
 }
 /* 16色選択 */
 .button-16grid {
+  position: relative; /* 追加：子要素の絶対位置基準 */
   display: grid;
   grid-template-columns: repeat(4, 90px); /* 横2列 */
   grid-template-rows: repeat(4, 90px); /* 縦2行 */
@@ -639,6 +640,37 @@ ol li {
   background: radial-gradient(circle, #000 30%, transparent 30%) 0 0 / 3px 3px;
   transform: translate(6px, 5px);
   z-index: 0; /* 背景のさらに下 */
+}
+
+/* エリア別軸ラベル */
+.upper_left,
+.upper_right {
+  top: -40px;
+}
+.upper_left {
+  position: absolute;
+  left: 0;
+  margin: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background: rgba(255, 255, 255, 0.7); /* 見やすくする場合 */
+  z-index: 2;
+}
+.lower_right {
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 2;
+}
+
+.lower_right,
+.lower_left {
+  top: 170px;
 }
 
 /* ==========================
