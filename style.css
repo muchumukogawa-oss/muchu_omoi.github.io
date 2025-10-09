@@ -502,6 +502,14 @@ ol li {
   pointer-events: none; /* クリック操作を邪魔しない */
 }
 
+.dynamic-label,
+.static-label {
+  color: #9e9b9b;
+  -webkit-text-stroke: 0.2px #000;
+  /* text-stroke: 1.5px #000; */
+  text-shadow: 0.5px 0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px -0.5px 0 #000;
+}
+
 /* ポジティブ：#2_area と #1_area の真ん中上部 */
 .positive-label {
   position: absolute;
