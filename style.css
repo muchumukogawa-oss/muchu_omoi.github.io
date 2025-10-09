@@ -489,6 +489,56 @@ ol li {
   margin: 0 10px;
 }
 
+/* 軸ラベル */
+/* 軸ラベル共通 */
+.positive-label,
+.negative-label,
+.dynamic-label,
+.static-label {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  pointer-events: none; /* クリック操作を邪魔しない */
+}
+
+.positive-label,
+.negative-label {
+  left: 50%; /* 横の中央 */
+  transform: translateX(-50%);
+}
+
+.dynamic-label,
+.static-label {
+  top: 176px;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を正立表示 */
+  /* ↓縁 */
+  /* -webkit-text-stroke: 0.2px #000; */
+  /* text-shadow: 0.5px 0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px -0.5px 0 #000; */
+}
+
+/* ポジティブ：#2_area と #1_area の真ん中上部 */
+.positive-label {
+  top: -50px; /* ボタン上の位置（上下調整用） */
+}
+
+/* ネガティブ：#3_area と #4_area の真ん中下部 */
+.negative-label {
+  bottom: -50px;
+}
+
+/* 動的：#1_area と #4_area の真ん中右部 */
+.dynamic-label {
+  right: -35px;
+}
+/* 静的：#2_area と #3_area の真ん中左部 */
+.static-label {
+  left: -35px;
+}
+
 /* ==========================
   num_area.html
   ========================== */
@@ -496,12 +546,13 @@ ol li {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 4px solid #aaa;
+  /* border: 4px solid #aaa; */
   margin: 16px auto;
   background: transparent;
 }
 /* 16色選択 */
 .button-16grid {
+  position: relative; /* 追加：子要素の絶対位置基準 */
   display: grid;
   grid-template-columns: repeat(4, 90px); /* 横2列 */
   grid-template-rows: repeat(4, 90px); /* 縦2行 */
@@ -591,6 +642,44 @@ ol li {
   z-index: 0; /* 背景のさらに下 */
 }
 
+/* エリア別軸ラベル */
+.upper_left,
+.upper_right,
+.lower_left,
+.lower_right {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  pointer-events: none; /* クリック操作を邪魔しない */
+}
+
+.upper_left,
+.upper_right {
+  top: -50px;
+}
+
+.lower_right,
+.lower_left {
+  top: 350px;
+}
+
+.upper_left {
+  left: 0;
+}
+
+.upper_right {
+  right: 0;
+}
+
+.lower_left {
+  left: 0;
+}
+
+.lower_right {
+  right: 0;
+}
+
 /* ==========================
   result.html
   ========================== */
@@ -625,14 +714,6 @@ ol li {
   /* 右端 */
   right: 33px;
 }
-/* 
-.arrow {
-  position: relative;
-  display: inline-block;
-  color: #000;
-  vertical-align: middle;
-  text-decoration: none;
-} */
 
 .arrow::before,
 .arrow::after {
