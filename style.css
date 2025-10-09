@@ -644,33 +644,40 @@ ol li {
 
 /* エリア別軸ラベル */
 .upper_left,
-.upper_right {
-  top: -40px;
-}
-.upper_left {
-  position: absolute;
-  left: 0;
-  margin: 8px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  background: rgba(255, 255, 255, 0.7); /* 見やすくする場合 */
-  z-index: 2;
-}
+.upper_right,
+.lower_left,
 .lower_right {
   position: absolute;
-  right: 0;
-  margin-top: 8px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: #333;
-  background: rgba(255, 255, 255, 0.7);
-  z-index: 2;
+  pointer-events: none; /* クリック操作を邪魔しない */
+}
+
+.upper_left,
+.upper_right {
+  top: -50px;
 }
 
 .lower_right,
 .lower_left {
-  top: 170px;
+  top: 350px;
+}
+
+.upper_left {
+  left: 0;
+}
+
+.upper_right {
+  right: 0;
+}
+
+.lower_left {
+  left: 0;
+}
+
+.lower_right {
+  right: 0;
 }
 
 /* ==========================
