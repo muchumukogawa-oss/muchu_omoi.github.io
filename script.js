@@ -84,8 +84,6 @@ if (buttons.length > 0 && confirmPopup && selectedColorCircle && yesBtn && noBtn
 }
 
 // result.html 用
-
-// 以下実行コード　　エラー出るためコメントアウト中
 if (window.location.pathname.endsWith('result.html')) {
   //   // 各エリアごとにカラーコードと画像パスを管理
   const imageMap = {
@@ -93,19 +91,19 @@ if (window.location.pathname.endsWith('result.html')) {
       '#92d050': ['img/area1/001.PNG', 'img/area1/101.PNG'],
       '#ffee00': ['img/area1/002.PNG', 'img/area1/102.PNG'],
       '#ffd500': ['img/area1/003.PNG', 'img/area1/103.PNG'],
-      '#db3522': ['img/area1/004.PNG', 'img/area1/104.PNG'],
-      '#f5fe68': ['img/area1/005.PNG', 'img/area1/105.PNG'],
-      '#dc6c2d': ['img/area1/006.PNG', 'img/area1/106.PNG'],
-      '#dc6c2d': ['img/area1/007.PNG', 'img/area1/107.PNG'],
-      '#dd544b': ['img/area1/008.PNG', 'img/area1/108.PNG'],
-      '#f8f371': ['img/area1/009.PNG', 'img/area1/109.PNG'],
-      '#ebbc5c': ['img/area1/010.PNG', 'img/area1/110.PNG'],
-      '#e898dc': ['img/area1/011.PNG', 'img/area1/111.PNG'],
-      '#e48f8c': ['img/area1/012.PNG', 'img/area1/112.PNG'],
-      '#ebe94f': ['img/area1/013.PNG', 'img/area1/113.PNG'],
-      '#deac89': ['img/area1/014.PNG', 'img/area1/114.PNG'],
-      '#f0cea0': ['img/area1/015.PNG', 'img/area1/115.PNG'],
-      '#f0cea0': ['img/area1/016.PNG', 'img/area1/116.PNG']
+      '#ff0000': ['img/area1/004.PNG', 'img/area1/104.PNG'],
+      '#f7ff40': ['img/area1/005.PNG', 'img/area1/105.PNG'],
+      '#ff9900': ['img/area1/006.PNG', 'img/area1/106.PNG'],
+      '#fc6204': ['img/area1/007.PNG', 'img/area1/107.PNG'],
+      '#ff4343': ['img/area1/008.PNG', 'img/area1/108.PNG'],
+      '#fff354': ['img/area1/009.PNG', 'img/area1/109.PNG'],
+      '#ffba45': ['img/area1/010.PNG', 'img/area1/110.PNG'],
+      '#ff92e0': ['img/area1/011.PNG', 'img/area1/111.PNG'],
+      '#ff8989': ['img/area1/012.PNG', 'img/area1/112.PNG'],
+      '#f0ea00': ['img/area1/013.PNG', 'img/area1/113.PNG'],
+      '#f1a983': ['img/area1/014.PNG', 'img/area1/114.PNG'],
+      '#ffcc99': ['img/area1/015.PNG', 'img/area1/115.PNG'],
+      '#ff8db4': ['img/area1/016.PNG', 'img/area1/116.PNG']
       // ... 1エリアの16色分
     },
     2: {
@@ -147,22 +145,22 @@ if (window.location.pathname.endsWith('result.html')) {
       // ... 3エリアの16色分
     },
     4: {
-      '#cdcd44': ['img/area4/001.PNG', 'img/area4/101.PNG'],
-      '#c797cf': ['img/area4/002.PNG', 'img/area4/102.PNG'],
-      '#9788ad': ['img/area4/003.PNG', 'img/area4/103.PNG'],
-      '#b16159': ['img/area4/004.PNG', 'img/area4/104.PNG'],
-      '#838328': ['img/area4/005.PNG', 'img/area4/105.PNG'],
-      '#8d6b9f': ['img/area4/006.PNG', 'img/area4/106.PNG'],
-      '#9c615f': ['img/area4/007.PNG', 'img/area4/107.PNG'],
-      '#b82b1b': ['img/area4/008.PNG', 'img/area4/108.PNG'],
-      '#525216': ['img/area4/009.PNG', 'img/area4/109.PNG'],
-      '#7c657f': ['img/area4/010.PNG', 'img/area4/110.PNG'],
-      '#be6948': ['img/area4/011.PNG', 'img/area4/111.PNG'],
-      '#83361d': ['img/area4/012.PNG', 'img/area4/112.PNG'],
-      '#3b0703': ['img/area4/013.PNG', 'img/area4/113.PNG'],
-      '#69296c': ['img/area4/014.PNG', 'img/area4/114.PNG'],
-      '#983162': ['img/area4/015.PNG', 'img/area4/115.PNG'],
-      '#69140b': ['img/area4/016.PNG', 'img/area4/116.PNG']
+      '#d2cd00': ['img/area4/001.PNG', 'img/area4/101.PNG'],
+      '#d593d3': ['img/area4/002.PNG', 'img/area4/102.PNG'],
+      '#9b87b0': ['img/area4/003.PNG', 'img/area4/103.PNG'],
+      '#c85a55': ['img/area4/004.PNG', 'img/area4/104.PNG'],
+      '#868300': ['img/area4/005.PNG', 'img/area4/105.PNG'],
+      '#9668a3': ['img/area4/006.PNG', 'img/area4/106.PNG'],
+      '#ae5d5d': ['img/area4/007.PNG', 'img/area4/107.PNG'],
+      '#d70000': ['img/area4/008.PNG', 'img/area4/108.PNG'],
+      '#545200': ['img/area4/009.PNG', 'img/area4/109.PNG'],
+      '#836381': ['img/area4/010.PNG', 'img/area4/110.PNG'],
+      '#d7623e': ['img/area4/011.PNG', 'img/area4/111.PNG'],
+      '#982e11': ['img/area4/012.PNG', 'img/area4/112.PNG'],
+      '#460000': ['img/area4/013.PNG', 'img/area4/113.PNG'],
+      '#782170': ['img/area4/014.PNG', 'img/area4/114.PNG'],
+      '#b02163': ['img/area4/015.PNG', 'img/area4/115.PNG'],
+      '#7c0000': ['img/area4/016.PNG', 'img/area4/116.PNG']
       // ... 4エリアの16色分
     }
   };
