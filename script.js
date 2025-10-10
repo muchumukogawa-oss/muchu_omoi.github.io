@@ -114,7 +114,7 @@ if (window.location.pathname.endsWith('result.html')) {
       '#83caeb': ['img/area2/005.PNG', 'img/area2/105.PNG'],
       '#ff9999': ['img/area2/006.PNG', 'img/area2/106.PNG'],
       '#d9f9fb': ['img/area2/007.PNG', 'img/area2/107.PNG'],
-      '#ffcccc': ['img/area2/008.PNG', 'img/area2/108.PNG'],
+      '#ffffcc': ['img/area2/008.PNG', 'img/area2/108.PNG'],
       '#4d94d8': ['img/area2/009.PNG', 'img/area2/109.PNG'],
       '#b3e5a1': ['img/area2/010.PNG', 'img/area2/110.PNG'],
       '#b7f2f7': ['img/area2/011.PNG', 'img/area2/111.PNG'],
