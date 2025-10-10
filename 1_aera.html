@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>おもいのパレット-1象限の色選択</title>
+    <title>おもいのパレット-第1象限の色選択</title>
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -21,8 +21,10 @@
       </div>
 
       <div class="button-16grid" id="area1">
+        <!-- エリア別軸ラベル -->
         <p class="upper_left">ポジティブ</p>
         <p class="lower_right">動的</p>
+        <!-- 色ボタン -->
         <button id="#92d050"><!-- 1 --></button>
         <button id="#ffee00"><!-- 2 --></button>
         <button id="#ffd500"><!-- 3 --></button>
@@ -41,7 +43,7 @@
         <button id="#ff8db4"><!-- 16 --></button>
       </div>
 
-      <!-- 決定 -->
+      <!-- 戻る -->
       <a href="AreaSelect.html">
         <button id="backBtn" class="custom-btn back-btn">
           <span class="btn-text"><ruby>戻<rt>もど</rt>る</ruby></span>
@@ -49,7 +51,6 @@
       </a>
     </div>
     <!-- 確認ポップアップ -->
-    <!-- ...existing code... -->
     <div id="confirmPopup" class="confirm-popup" style="display: none">
       <div class="popup-content">
         <p class="popup-text">これでいいですか？</p>
@@ -64,7 +65,6 @@
         </div>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
