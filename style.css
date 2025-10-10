@@ -18,6 +18,8 @@ rt {
 
 /* ページ全体 */
 .page-container {
+  font-family: 'Kosugi Maru', sans-serif;
+  text-align: center;
   width: 100%;
   height: 100%;
   position: relative;
@@ -211,11 +213,6 @@ a:any-link {
 /* ==========================
   play.html
   ========================== */
-
-.page-container {
-  font-family: 'Kosugi Maru', sans-serif;
-  text-align: center;
-}
 
 .card {
   position: relative;
