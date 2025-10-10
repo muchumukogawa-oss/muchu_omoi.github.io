@@ -20,32 +20,6 @@ if (startBtn && popup && closeBtn && agreeBtn) {
   });
 }
 
-// BoothSelect.html 用イベント
-//ドロップダウン
-// const drop_select = document.querySelector('select');
-// drop_select.addEventListener('change', () => {});
-
-//ラジオボタン
-// const radio_select = document.querySelector('select');
-// radio_select.addEventListener('changedecideBtn', () => {});
-
-const drop_select = document.querySelector('select');
-if (drop_select) {
-  drop_select.addEventListener('change', () => {
-    // ドロップダウン変更時の処理を書く
-  });
-}
-
-// ラジオボタン
-const radio_selects = document.querySelectorAll('input[type="radio"]');
-if (radio_selects.length > 0) {
-  radio_selects.forEach((radio) => {
-    radio.addEventListener('change', () => {
-      // ラジオボタン変更時の処理を書く
-    });
-  });
-}
-
 //AreaSelect.html,用
 
 // ColorSelect.html 用
@@ -71,7 +45,6 @@ if (buttons.length > 0 && confirmPopup && selectedColorCircle && yesBtn && noBtn
 
   // 「はい」押下時
   yesBtn.addEventListener('click', () => {
-    // window.location.href = `result.html?color=${encodeURIComponent(selectedId)}`;
     const areaDiv = document.querySelector('.button-16grid');
     const areaNum = areaDiv ? areaDiv.id.replace('area', '') : '1';
     window.location.href = `result.html?area=${areaNum}&color=${encodeURIComponent(selectedId)}`;
