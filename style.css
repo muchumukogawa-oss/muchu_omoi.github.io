@@ -195,7 +195,6 @@ a:any-link {
   text-align: center;
   position: sticky;
   bottom: 0; /* 下端に固定 */
-  /* margin-top: 20px; */
 }
 
 /* 同意する*/
@@ -482,7 +481,6 @@ ol li {
   display: grid;
   grid-template-columns: repeat(4, 90px); /* 横2列 */
   grid-template-rows: repeat(4, 90px); /* 縦2行 */
-  /* gap: 10px; ボタンの間隔 */
   /* 背景透明 */
   background: transparent;
 }
@@ -525,7 +523,6 @@ ol li {
 .h2_color {
   position: relative;
   bottom: 30px;
-  /* margin-bottom: 82px; */
 }
 
 #backBtn {

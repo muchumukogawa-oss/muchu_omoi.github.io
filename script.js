@@ -58,7 +58,6 @@ if (buttons.length > 0 && confirmPopup && selectedColorCircle && yesBtn && noBtn
 
 // result.html 用
 if (window.location.pathname.endsWith('result.html')) {
-  //   // 各エリアごとにカラーコードと画像パスを管理
   const imageMap = {
     1: {
       '#92d050': ['img/area1/001.PNG', 'img/area1/101.PNG'],
