@@ -23,7 +23,6 @@ if (startBtn && popup && closeBtn && agreeBtn) {
 //AreaSelect.html,用
 
 // ColorSelect.html 用
-const backeBtn = document.getElementById('backBtn');
 
 const buttons = document.querySelectorAll('.button-16grid button');
 const confirmPopup = document.getElementById('confirmPopup');
