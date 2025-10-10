@@ -36,12 +36,6 @@ rt {
   height: 294px;
 }
 
-#h2 {
-  position: relative;
-  bottom: 90px;
-  /* margin-bottom: 82px; */
-}
-
 a {
   text-decoration: none;
 }
@@ -378,8 +372,15 @@ ol li {
 }
 
 /* ==========================
-  AreaSelect.html,ColorSelect.html
+  AreaSelect.html
   ========================== */
+
+#h2 {
+  position: relative;
+  bottom: 90px;
+  /* margin-bottom: 82px; */
+}
+
 /* 確認ポップアップ全体 */
 .confirm-popup {
   display: none; /* 最初は非表示 */
