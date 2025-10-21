@@ -6,7 +6,6 @@ const popup = document.getElementById('popup');
 const closeBtn = document.querySelector('.close');
 const agreeBtn = document.getElementById('agreeBtn');
 
-// index.html 用イベント
 if (startBtn && popup && closeBtn && agreeBtn) {
   startBtn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -20,10 +19,7 @@ if (startBtn && popup && closeBtn && agreeBtn) {
   });
 }
 
-//AreaSelect.html,用
-
-// ColorSelect.html 用
-
+// num_area.html 用
 const buttons = document.querySelectorAll('.button-16grid button');
 const confirmPopup = document.getElementById('confirmPopup');
 const selectedColorCircle = document.getElementById('selectedColor');
